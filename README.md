@@ -1,3 +1,51 @@
+# Angular Version
+```sh
+node -v
+npm -v 
+```
+---
+
+# Npm
+```sh
+npm init
+npm init -y
+npm list
+npm install --save bootstrap
+npm uninstall      bootstrap
+npm update         bootstrap
+```
+---
+
+# Angular Kurulumlar
+```sh
+npm install -g typescript
+npm install -g @angular/cli
+```
+---
+
+# Angular CLI 
+```sh
+npm uninstall -g angular/cli
+npm cache clean
+npm i -g @angular/cli
+```
+---
+
+# Angular Project
+```sh
+ng new angular-shoop-app 
+cd angular-shoop-app 
+ng serve
+ng --help
+
+ng serve (http://localhost:4200)
+ng serve --port 9999
+```
+---
+
+
+
+---
 # AngularShoopApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
