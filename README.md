@@ -33,8 +33,13 @@
 - ng generate interface   onepage-i
 - ng generate enum        onepage-e
 
-
 - ng g c onepage
+---
+
+# Angular CLI BLOG
+- ng generate component   onepageHeader
+- ng generate component   onepageMain
+- ng generate component   onepageFooter
 ---
 
 # Angular Konular

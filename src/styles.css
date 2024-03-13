@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+    padding:0px;
+    box-sizing: content-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    background-color: #f4f4f4;
+    color: #333;
+    position: relative;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1rem;
+    transition: all 0.7s ease;
+    padding:1rem;
+}
+
+p:hover{
+    text-shadow: 0.2px .3px rgb(58, 58, 58);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
