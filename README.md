@@ -227,7 +227,10 @@ angular.json =>
 
 ## Angular Fontawesome
 ```sh
+Terminal ==> 
 npm i font-awesome 
+
+angular.json ==> 
 "node_modules/font-awesome/css/font-awesome.min.css"
 
 index.html ==> 
