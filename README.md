@@ -106,6 +106,22 @@ npm i -g nodemon
 ---
 
 
+
+## Package.json 
+```sh
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "angular": "ng serve --port 9999 --open",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  }
+
+  npm run angular
+```
+
+
 ## Angular Kurulumlar
 ```sh
 npm install -g typescript
@@ -128,6 +144,86 @@ ng serve --open
 
 ```
 ---
+
+## Bootstrap CDN 
+```sh
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Angular Shoop App</title>
+  <base href="/">
+
+  <!-- Responsive Design-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+/>
+</head>
+
+<body>
+  <!-- Start Codes-->
+  <!-- <app-root></app-root> -->
+  <p class="text-primary display-4 text-center">Merhabalar Bootstrap5</p>
+  <!-- End Codes-->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+></script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+></script>
+</body>
+</html>
+```
+
+## Angular Bootstrap 
+```sh
+npm install bootstrap --save
+
+angular.json => 
+"styles": [
+        "src/styles.css",
+        "node_modules/bootstrap/dist/css/bootstrap.min.css"
+        ],
+"scripts": [
+    "node_modules/bootstrap/dist/js/bootstrap.js"
+]
+
+
+"dependencies": {
+    "@angular/animations": "^17.2.0",
+    "@angular/common": "^17.2.0",
+    "@angular/compiler": "^17.2.0",
+    "@angular/core": "^17.2.0",
+    "@angular/forms": "^17.2.0",
+    "@angular/platform-browser": "^17.2.0",
+    "@angular/platform-browser-dynamic": "^17.2.0",
+    "@angular/router": "^17.2.0",
+    "bootstrap": "^5.3.3",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3"
+  },
+
+```
+---
+
 
 ## Angular CLI Delete after Install
 ```sh
