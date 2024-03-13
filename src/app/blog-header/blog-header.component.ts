@@ -10,4 +10,5 @@ import { Component } from '@angular/core';
 export class BlogHeaderComponent {
   name:string="Hamit";
   surname:string="Mızrak";
+  logo:string="Logo"
 }
