@@ -22,7 +22,19 @@
 - Service :  Api, Database
 - Module = Component + Service
 - Injector = Service + Service+  ...Service
+---
 
+# Angular CLI KOMUT
+- ng generate component   onepage-c
+- ng generate service     onepage-s
+- ng generate module      onepage-m
+- ng generate pipe        onepage-p
+- ng generate directive   onepage-d
+- ng generate interface   onepage-i
+- ng generate enum        onepage-e
+
+
+- ng g c onepage
 ---
 
 # Angular Konular
