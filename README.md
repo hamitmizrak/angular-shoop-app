@@ -40,6 +40,8 @@ ng --help
 
 ng serve (http://localhost:4200)
 ng serve --port 9999
+
+ng serve --port 9999 --open
 ```
 ---
 
