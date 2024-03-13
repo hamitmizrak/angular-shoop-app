@@ -10,4 +10,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'angular-shoop-app';
+  project = 'Angular Kursumuza Hoşgeldiniz';
 }

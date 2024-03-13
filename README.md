@@ -17,10 +17,20 @@
 - Vue     2014
 ---
 
+# Angular Mimarisi
+- Component : Küçük küçük uygulamalar
+- Service :  Api, Database
+- Module = Component + Service
+- Injector = Service + Service+  ...Service
+
+---
+
 # Angular Konular
 - Component 
 - Servis (Api, Database)
 - Module 
+- Pipeline
+- Router
 ---
 
 # TypeScript (TS)
@@ -43,8 +53,7 @@
 
 (GitHub Sitesi)[https://github.com/hamitmizrak/angular-shoop-app.git]
 (Angular Resmi Sitesi)[https://angular.io]
-
-----
+---
 
 ## Git
 ```sh
@@ -87,7 +96,7 @@ npm update         bootstrap
 ---
 
 
-## Npm Angular
+## Npm Install Angular
 ```sh
 npm i bootstrap
 npm i fontawesome
@@ -120,7 +129,7 @@ ng serve --open
 ```
 ---
 
-## Angular CLI 
+## Angular CLI Delete after Install
 ```sh
 npm uninstall -g angular/cli
 npm cache clean
