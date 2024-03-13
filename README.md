@@ -225,6 +225,17 @@ angular.json =>
 ---
 
 
+## Angular Fontawesome
+```sh
+npm i font-awesome 
+"node_modules/font-awesome/css/font-awesome.min.css"
+
+index.html ==> 
+  <i class="fa-brands fa-instagram text-danger"></i>
+```
+---
+
+
 ## Angular CLI Delete after Install
 ```sh
 npm uninstall -g angular/cli
