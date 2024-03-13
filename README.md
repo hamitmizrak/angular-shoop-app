@@ -239,6 +239,23 @@ index.html ==>
 ---
 
 
+## Angular jQuery
+```sh
+Terminal ==> 
+npm i jquery popper.js bootstrap
+
+npm i jquery
+
+angular.json ==> 
+ "scripts": [
+    "node_modules/jquery/dist/jquery.min.js"
+]
+
+index.html ==> 
+```
+---
+
+
 ## Angular CLI Delete after Install
 ```sh
 npm uninstall -g angular/cli
