@@ -68,8 +68,9 @@
 - Netflix,IBM, Linkedin, Apple, Google, Paypal
 ---
 
-(GitHub Sitesi)[https://github.com/hamitmizrak/angular-shoop-app.git]
-(Angular Resmi Sitesi)[https://angular.io]
+[GitHub Sitesi](https://github.com/hamitmizrak/angular-shoop-app.git)
+[Angular Resmi Sitesi](https://angular.io)
+[MDB5](https://mdbootstrap.com/docs/standard/navigation/footer/)
 ---
 
 ## Git
