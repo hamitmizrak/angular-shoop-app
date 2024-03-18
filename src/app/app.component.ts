@@ -6,6 +6,7 @@ import { RouterOutlet } from '@angular/router';
 import { BlogHeaderComponent } from './blog-header/blog-header.component';
 import { BlogMainComponent } from './blog-main/blog-main.component';
 import { BlogFooterComponent } from './blog-footer/blog-footer.component';
+import { BlogNavbarComponent } from './blog-navbar/blog-navbar.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,9 @@ import { BlogFooterComponent } from './blog-footer/blog-footer.component';
     RouterOutlet,
     BlogHeaderComponent,
     BlogMainComponent,
-    BlogFooterComponent],
+    BlogFooterComponent,
+    BlogNavbarComponent
+  ],
   // 1.YOL (HTML)
   templateUrl: './app.component.html',
 

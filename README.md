@@ -24,7 +24,7 @@
 - Injector = Service + Service+  ...Service
 ---
 
-# Angular CLI KOMUT
+# Angular CLI KOMUT 
 - ng generate component   onepage-c
 - ng generate service     onepage-s
 - ng generate module      onepage-m
@@ -36,8 +36,9 @@
 - ng g c onepage
 ---
 
-# Angular CLI BLOG
-- ng generate component   blogHeader
+# Angular CLI BLOG (44)
+- ng generate component   blogNavbar
+- ng generate c           blogHeader
 - ng generate component   blogMain
 - ng generate component   blogFooter
 - ng generate component   blogRegister
