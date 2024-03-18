@@ -80,14 +80,14 @@ export class BlogNavbarComponent {
     };
 
     // Navbar Link
-    navbarLink:Array<any>;
+    navbarLink: Array<any>;
 
     // Search
-    search:{
-      name:String;
-      placeholder:string;
-      type:string;
-      button_style:string;
+    search: {
+      name: String;
+      placeholder: string;
+      type: string;
+      button_style: string;
     };
   } = {
     // Authentication
@@ -95,59 +95,59 @@ export class BlogNavbarComponent {
 
     // Logo
     logo: {
-      logoName: "Logo",
-      logoFontAwesome: "fa-solid fa-earth-americas",
-      logoPicture: "admin.png",
-      logoLink: "/",
-      logoTitle: "Admin Title"
+      logoName: 'Logo',
+      logoFontAwesome: 'fa-solid fa-earth-americas',
+      logoPicture: 'admin.png',
+      logoLink: '/',
+      logoTitle: 'Admin Title',
     },
 
     // Navbar
-    navbarLink:[
+    navbarLink: [
       {
-        id:1,
-        name:'anasayfa',
-        link:"/index",
-        fontAwesome:"fa-solid fa-house-chimney"
+        id: 1,
+        name: 'anasayfa',
+        link: '/index',
+        fontAwesome: 'fa-solid fa-house-chimney',
       },
       {
-        id:2,
-        name:'my work',
-        link:"#business_id",
-        fontAwesome:"fa-solid fa-user-tie"
+        id: 2,
+        name: 'my work',
+        link: '#business_id',
+        fontAwesome: 'fa-solid fa-user-tie',
       },
       {
-        id:3,
-        name:'blog',
-        link:"blog_id",
-        fontAwesome:"fa-solid fa-square-rss"
+        id: 3,
+        name: 'blog',
+        link: 'blog_id',
+        fontAwesome: 'fa-solid fa-square-rss',
       },
       {
-        id:4,
-        name:'about',
-        link:"#about_id",
-        fontAwesome:"fa-regular fa-address-card"
+        id: 4,
+        name: 'about',
+        link: '#about_id',
+        fontAwesome: 'fa-regular fa-address-card',
       },
       {
-        id:5,
-        name:'Contact',
-        link:"#contact_id",
-        fontAwesome:"fa-solid fa-map-location-dot"
-      }
+        id: 5,
+        name: 'Contact',
+        link: '#contact_id',
+        fontAwesome: 'fa-solid fa-map-location-dot',
+      },
     ],
 
-    search:{
-      name:"Ara",
-      placeholder:"Arama için",
-      type:"text",
-      button_style:"btn btn-outline-success my-2 my-sm-0",
+    search: {
+      name: 'Ara',
+      placeholder: 'Arama için',
+      type: 'text',
+      button_style: 'btn btn-outline-success my-2 my-sm-0',
     },
   };
 
   // Constructor (Parametreli)
-  constructor(){}
+  constructor() {}
   // Method
-  darkMode(){
-    alert("Dark Mode");
+  darkMode() {
+    alert('Dark Mode');
   }
 } //end BlogNavbarComponent
