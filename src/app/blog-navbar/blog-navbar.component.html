@@ -1,69 +1,79 @@
-<nav
-    class="navbar navbar-expand-md navbar-dark bg-dark"
->
-    <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" aria-current="page"
-                        >Home
-                        <span class="visually-hidden">(current)</span></a
-                    >
+<!-- Navbar -->
+<nav id="navbar_id" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark bg-body-tertiary44">
+
+    <!-- Container wrapper -->
+    <div class="container container-fluid44">
+        <!-- Toggle button -->
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                <!-- <img [src]="navBar.logo.logoImageName" height="30" alt="Logo" loading="lazy" class="rounded-1" /> -->
+                <i [class]="navBar.logo.logoFontAwesome"></i>
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"></li>
+
+                <li *ngFor="let temp of navBar.navbarLink" class="nav-item">
+                    <a class="nav-link" href="{{temp.link}}">
+                        {{temp.name | titlecase}}
+                    </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="dropdownId"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Dropdown</a
-                    >
-                    <div
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownId"
-                    >
-                        <a class="dropdown-item" href="#"
-                            >Action 1</a
-                        >
-                        <a class="dropdown-item" href="#"
-                            >Action 2</a
-                        >
-                    </div>
-                </li>
-            </ul>
-            <form class="d-flex my-2 my-lg-0">
-                <input
-                    class="form-control me-sm-2"
-                    type="text"
-                    placeholder="Search"
-                />
-                <button
-                    class="btn btn-outline-success my-2 my-sm-0"
-                    type="submit"
-                >
-                    Search
+            </ul><!-- Left links -->
+        </div><!-- Collapsible wrapper -->
+
+
+        <!-- Right elements -->
+        <div class="d-flex align-items-center">
+            <!-- Search -->
+            <form class="d-flex my-2 my-lg-0 me-2">
+                <input class="form-control me-sm-2" [type]="navBar.search.type"
+                    [placeholder]="navBar.search.placeholder" />
+                <button [class]="navBar.search.button_style" type="submit">
+                    {{navBar.search.name}}
                 </button>
             </form>
-        </div>
-    </div>
+
+            <!-- Login Register -->
+            <!-- Eğer kullanıcı sisteme giriş yapmışsa Login/Register Görünmesin -->
+            <div class="dropdown dropleft me-2">
+                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25"
+                    alt="Black and White Portrait of a Man" loading="lazy" id="triggerId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" />
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">My profile</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+                    <a class="dropdown-item disabled" href="#">Disabled action</a>
+                    <h6 class="dropdown-header">Section header</h6>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">After divider action</a>
+                </div>
+            </div>
+
+            <!-- Eğer login:false ise login/register görünsün -->
+            <div class="btn-group">
+                <button class="btn btn-warning dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="triggerId">
+                    <a class="dropdown-item" routerLink="/login">Login</a>
+                    <a class="dropdown-item" routerLink="/register">Register</a>
+                    <a class="dropdown-item disabled" href="#">Disabled action</a>
+                    <h6 class="dropdown-header">Section header</h6>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">After divider action</a>
+                </div>
+            </div>
+            <a (click)="darkMode()" class="btn btn-danger ms-2 me-2">
+                <i class="fa-solid fa-moon"></i>
+            </a>
+        </div> <!-- Right elements -->
+    </div> <!-- end container -->
 </nav>
-
-
-
+<!--end Navbar -->

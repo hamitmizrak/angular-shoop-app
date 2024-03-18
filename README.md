@@ -297,6 +297,26 @@ export const routes: Routes = [
 ```
 ---
 
+## Angular Önemli Notlar
+```sh
+(click)="darkMode()  ==> Function Bağlamak
+[placeholder]="navBar.search.placeholder" ==> Attributes
+href="{{temp.link}}"
+```
+---
+
+
+## Angular ngFor
+```sh
+<li *ngFor="let temp of navBar.navbarLink" class="nav-item">
+    <a class="nav-link" href="{{temp.link}}">
+    {{temp.name | titlecase}}
+    </a>
+</li>
+```
+---
+ 
+
 
 ## Angular CLI Delete after Install
 ```sh

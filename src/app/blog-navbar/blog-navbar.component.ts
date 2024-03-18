@@ -87,7 +87,7 @@ export class BlogNavbarComponent {
       name:String;
       placeholder:string;
       type:string;
-      style:string;
+      button_style:string;
     };
   } = {
     // Authentication
@@ -96,7 +96,7 @@ export class BlogNavbarComponent {
     // Logo
     logo: {
       logoName: "Logo",
-      logoFontAwesome: "fa fa-solid",
+      logoFontAwesome: "fa-solid fa-earth-americas",
       logoPicture: "admin.png",
       logoLink: "/",
       logoTitle: "Admin Title"
@@ -137,10 +137,10 @@ export class BlogNavbarComponent {
     ],
 
     search:{
-      name:"search",
+      name:"Ara",
       placeholder:"Arama için",
       type:"text",
-      style:"btn btn-primary",
+      button_style:"btn btn-outline-success my-2 my-sm-0",
     },
   };
 
