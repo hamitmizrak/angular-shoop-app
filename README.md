@@ -37,9 +37,10 @@
 ---
 
 # Angular CLI BLOG
-- ng generate component   onepageHeader
-- ng generate component   onepageMain
-- ng generate component   onepageFooter
+- ng generate component   blogHeader
+- ng generate component   blogMain
+- ng generate component   blogFooter
+- ng generate component   blogRegister
 ---
 
 # Angular Konular
@@ -136,7 +137,7 @@ npm i -g nodemon
     "test": "ng test"
   }
 
-  npm run angular
+  npm run angular (Kendi scriptlerimiz npm run diyerek yazarız.)
 ```
 
 
@@ -270,6 +271,28 @@ angular.json ==>
 ]
 
 index.html ==> 
+```
+---
+
+## Angular Router
+```sh
+// Routes import
+import { Routes } from '@angular/router';
+
+// Page Component
+import { BlogMainComponent } from './blog-main/blog-main.component';
+import { BlogRegisterComponent } from './blog-register/blog-register.component';
+
+// Export
+export const routes: Routes = [
+  // Index (Home Page: Default)
+  { path: 'index', component: BlogMainComponent },
+  { path: '', redirectTo: 'index', pathMatch: 'full' },
+
+  // Register
+  { path: 'register', component: BlogRegisterComponent },
+];
+ 
 ```
 ---
 
