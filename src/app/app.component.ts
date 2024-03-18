@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
+// Component
 import { BlogHeaderComponent } from './blog-header/blog-header.component';
 import { BlogMainComponent } from './blog-main/blog-main.component';
 import { BlogFooterComponent } from './blog-footer/blog-footer.component';
