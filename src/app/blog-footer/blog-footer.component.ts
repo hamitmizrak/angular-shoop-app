@@ -10,6 +10,6 @@ import { Component } from '@angular/core';
 export class BlogFooterComponent {
   // Method
   newDateYear(): string {
-    return `2015 © - ${String(new Date().getFullYear())} Copyright `;
+    return `Copyright © 2015 - ${String(new Date().getFullYear())}`;
   }
 } //end class BlogFooterComponent

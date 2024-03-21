@@ -5,7 +5,7 @@
             <div class="columns">
                 <div class="column is-8">
                     <div class="content">
-                        <h1 class="text-center">Blog Main</h1>
+                        <h1 class="text-center fs-1">Blog Main</h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
                             iaculis mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -29,18 +29,20 @@
         <!-- Blog Card -->
         <section id="blog_id">
             <a href="/blog">
-                <h2 class="text-center">{{blogCardTitle|uppercase}}</h2>
+                <h2 class="text-center fs-2">{{blogCardTitle|uppercase}}</h2>
             </a> 
-            <span style="margin-left:12rem;">{{blogCard.length}} tane blog var</span>
-            <span  [hidden]="!(blogCard.length>=9)">9 ve Üzeri Blog Var</span>
+            <div class="d-flex justify-content-center mb-3">
+                <span class="fs-6 badge text-bg-warning rounded-pill my-auto">{{blogCard.length}} tane Blog var</span>
+                <span class="fs-6 badge text-bg-info rounded-pill my-auto" [hidden]="!(blogCard.length>=9)">9 ve üzeri Blog var</span>
+            </div>
 
             <ng-container *ngIf="blogCard.length>0; then blog; else noBlogCard"></ng-container>
             <ng-template #blog>
                 <div class="container">
                     <div class="row">
-                        <div *ngFor="let temp of blogCard | slice:0:9" class="col-sm-12 col-md-3 col-lg-4">
+                        <div *ngFor="let temp of blogCard | slice:0:9" class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <img class="card-img-top" [src]="temp.picture" alt="Title" />
+                                <img class="card-img-top img-fluid" [src]="temp.picture" alt="Title" />
                                 <div class="card-body">
                                     <h2 class="card-title">{{temp.id}}</h2>
                                     <h4 class="card-title">{{temp.title}}</h4>
