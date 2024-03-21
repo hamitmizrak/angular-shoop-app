@@ -42,6 +42,7 @@
 - ng generate component   blogMain
 - ng generate component   blogFooter
 - ng generate component   blogRegister
+- ng generate component   blogCard
 ---
 
 # Angular Konular

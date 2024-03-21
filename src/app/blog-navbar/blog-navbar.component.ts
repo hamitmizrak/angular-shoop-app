@@ -119,7 +119,7 @@ export class BlogNavbarComponent {
       {
         id: 3,
         name: 'blog',
-        link: 'blog_id',
+        link: '#blog_id',
         fontAwesome: 'fa-solid fa-square-rss',
       },
       {

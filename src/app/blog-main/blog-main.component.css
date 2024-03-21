@@ -1,0 +1,15 @@
+img {
+    transition: 2s ease-in-out;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.9);
+}
+img:hover {
+    opacity: 0.9;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.8);
+}
+
+.my_special_clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
