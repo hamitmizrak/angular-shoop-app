@@ -43,6 +43,11 @@
 - ng generate component   blogFooter
 - ng generate component   blogRegister
 - ng generate component   blogCard
+- ng generate component   blogCardDetailPage
+- ng generate pipe   searchBlogFilter
+- ng generate service   alertifyMessage
+- ng generate service   alertifyMessage
+- ng g s   blogArrayDataService
 ---
 
 # Angular Konular

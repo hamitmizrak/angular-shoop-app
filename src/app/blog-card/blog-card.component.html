@@ -1,1 +1,47 @@
-<p>blog-card works!</p>
+ 
+ <h1 class="text-center display-5 text-primary">Bloglar</h1>
+ 
+ <!-- Blog Card -->
+ <section id="blog_id">
+  
+    <div style="margin-left:12rem;">{{blogCard.length}} tane blog var</div>
+  
+    <ng-container *ngIf="blogCard.length>0; then blog; else noBlogCard"></ng-container>
+    <ng-template #blog>
+        <div class="container">
+            <div class="row">
+                <div *ngFor="let temp of blogCard" class="col-sm-12 col-md-3 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" [src]="temp.picture" alt="Title" />
+                        <div class="card-body">
+                            <h2 class="card-title">{{temp.id}}</h2>
+                            <h4 class="card-title">{{temp.title}}</h4>
+                            <p class="card-text line-clamp-18">{{temp.description}}</p>
+                            <span class="text-muted float-start">{{temp.categoryName}}</span>
+                            <span class="text-muted float-end">{{temp.date | date:"fullDate"}}</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </ng-template>
+    <ng-template #noBlogCard>
+        <div
+            class="alert alert-danger alert-dismissible fade show"
+            role="alert"
+        >
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+            ></button>
+        
+            <strong class="ms-5 me-2">Blog</strong>Gösterilecek Blog Yoktur ...
+        </div>
+        <p> Gösterilecek Blog Yoktur</p>
+    </ng-template>
+
+
+</section>

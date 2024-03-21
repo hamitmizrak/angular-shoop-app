@@ -1,9 +1,13 @@
+import { AlertifyMessageService } from './../services/alertify-message.service';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 // Special Page
 import { BlogCard } from './BlogCard';
+
+// Service
+// AlertifyMessageService
 
 @Component({
   selector: 'app-blog-main',
@@ -12,7 +16,16 @@ import { BlogCard } from './BlogCard';
   templateUrl: './blog-main.component.html',
   styleUrl: './blog-main.component.css'
 })
-export class BlogMainComponent {
+export class BlogMainComponent implements OnInit {
+
+// Service Constructor
+constructor(private alertifyMessageService:AlertifyMessageService){
+}
+
+ngOnInit(): void {
+    this.alertifyMessageService.alertMessage("Angular Workshoop Sayfamıza Hoşgeldiniz")
+}
+
   // Blog Card
   blogCardTitle:string="BlogLAR"
 
