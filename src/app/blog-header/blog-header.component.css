@@ -5,7 +5,7 @@
     height: 70vh;
     z-index: -1;
     padding-top:12rem;
-    margin-top:4rem
+     margin-top:-0.1rem 
 }
 #header_id a i{
     font-size: 1rem;
