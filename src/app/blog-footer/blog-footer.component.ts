@@ -5,8 +5,11 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './blog-footer.component.html',
-  styleUrl: './blog-footer.component.css'
+  styleUrl: './blog-footer.component.css',
 })
 export class BlogFooterComponent {
-
-}
+  // Method
+  newDateYear(): string {
+    return `2015 © - ${String(new Date().getFullYear())} Copyright `;
+  }
+} //end class BlogFooterComponent
