@@ -23,7 +23,7 @@ constructor(private alertifyMessageService:AlertifyMessageService){
 }
 
 ngOnInit(): void {
-    this.alertifyMessageService.alertMessage("Angular Workshoop Sayfamıza Hoşgeldiniz")
+    this.alertifyMessageService.alertMessage("Angular Workshop Sayfamıza Hoşgeldiniz")
 }
 
   // Blog Card
