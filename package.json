@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "angular":"ng serve --port 9999 --open",
+    "angular": "ng serve --port 9999 --open",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -22,6 +22,7 @@
     "bootstrap": "^5.3.3",
     "font-awesome": "^4.7.0",
     "jquery": "^3.7.1",
+    "popper.js": "^1.16.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
