@@ -1,1 +1,18 @@
-<p> HEADER ALANI</p>
+<header id="header_id">
+    <div class="jumbotron text-white">
+        <div class="container">
+            <div class="text-center p-5">
+                <h1 class="text-uppercase shadow">{{headerTitle}}</h1>
+                <h4 class="mb-4 mt-4">{{headerContent}}</h4>
+                <span *ngFor="let temp of socialContent">
+                    <a [href]="temp.link" [class]="temp.classSocial">{{temp.text}}</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Back To Top -->
+<a href="#header_id" id="back_to_top_id" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+</a>

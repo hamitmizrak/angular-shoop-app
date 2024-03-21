@@ -1,0 +1,28 @@
+#header_id{
+    background-image: url('../../image/cup-of-coffee-1280537_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    z-index: -1;
+    padding-top:12rem;
+    margin-top:4rem
+}
+#header_id a i{
+    font-size: 1rem;
+}
+
+/* back_to_top */
+#back_to_top_id{
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    z-index: 1;
+    background: #007bff;
+    color: white!important;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 0.8rem;
+    /* display: none; */
+}
