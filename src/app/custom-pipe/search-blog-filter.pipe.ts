@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { BlogCard } from './BlogCard';
+import { BlogCard } from '../blog-card/BlogCard';
 
 @Pipe({
   // pipe adı
